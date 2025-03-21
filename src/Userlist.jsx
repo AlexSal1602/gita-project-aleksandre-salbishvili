@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Userlist.css';
+import { FaCirclePlus } from "react-icons/fa6";
 
 const Userlist = () => {
   const [users, setUsers] = useState([]);
@@ -71,14 +72,13 @@ const Userlist = () => {
   return (
     <>
       <h1>Home</h1>
-      <form className="search-form" onSubmit={handleSearch}>
-        <input type="text" placeholder="Search by name" />
-        <button type="submit">Search</button>
-      </form>
-      <button className="add-employee-button" onClick={() => setIsModalOpen(true)}>
-        Add New Employee
-      </button>
-      <button className="reset-button" onClick={() => setUsers(originalUsers)}>Reset</button>
+      <div className="controls">
+        <form className="search-form" onSubmit={handleSearch}>
+          <input type="text" placeholder="Search by name" />
+          <button type="submit">Search</button>
+        </form>
+        <button className="reset-button" onClick={() => setUsers(originalUsers)}>Reset</button>
+      </div>
       <div id="user-cards-container">
         {users.map(user => (
           <div key={user.id} className="user-card">
@@ -87,39 +87,45 @@ const Userlist = () => {
             <p><strong>Role:</strong> {user.role}</p>
           </div>
         ))}
+        <button className="add-employee-button" onClick={() => setIsModalOpen(true)}>
+          <FaCirclePlus fontSize="2em" />
+        </button>
       </div>
+      
 
       {isModalOpen && (
         <div className="modal">
           <div className="modal-content">
             <span className="close-button" onClick={() => setIsModalOpen(false)}>&times;</span>
             <form className="add-new-employee-form" onSubmit={handleSubmit}>
-              <input
-                type="text"
-                name="name"
-                placeholder="Name"
-                value={newUser.name}
-                onChange={handleChange}
-                required
-              />
-              <input
-                type="text"
-                name="department"
-                placeholder="Department"
-                value={newUser.department}
-                onChange={handleChange}
-                required
-              />
-              <input
-                type="text"
-                name="role"
-                placeholder="Role"
-                value={newUser.role}
-                onChange={handleChange}
-                required
-              />
-              <button type="submit" id="add-emplyee-button">Add Employee</button>
-            </form>
+  <input
+    type="text"
+    name="name"
+    placeholder="Name"
+    value={newUser.name}
+    onChange={handleChange}
+    required
+  />
+  <input
+    type="text"
+    name="department"
+    placeholder="Department"
+    value={newUser.department}
+    onChange={handleChange}
+    required
+  />
+  <input
+    type="text"
+    name="role"
+    placeholder="Role"
+    value={newUser.role}
+    onChange={handleChange}
+    required
+  />
+  <button type="submit" className="add-employee-button-modal">
+    Add Employee
+  </button>
+</form>
           </div>
         </div>
       )}

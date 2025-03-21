@@ -1,23 +1,10 @@
-#table-users {
-    width: 100%;
-    padding: 0 110px;
-    border-collapse: collapse;
-    background-color: white;
-    color: black;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+  .controls{
+    max-width: 814px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
   }
   
-  #table-users td, #table-users th {
-    border: 1px solid rgb(219, 219, 219);
-    padding: 0.5em 1em;
-    margin: 0;
-  }
-  
-  #table-users th {
-    background-color: #ffc400;
-  }
-
   #user-cards-container {
     display: flex;
     flex-wrap: wrap;
@@ -46,7 +33,7 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 16px;
-    width: 250px;
+    min-width: 250px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
@@ -56,6 +43,28 @@
   
   .user-card p {
     margin: 4px 0;
+  }
+
+  .add-employee-button {
+    background-color: #ffc400;
+    border: 1px solid #ffc400;
+    border-radius: 8px; 
+    padding: 16px; 
+    width: 284px; 
+    height: 126px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    cursor: pointer;
+    
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    overflow: hidden;
+  }
+
+  .add-employee-button:hover {
+    background-color: #eaeaea;
+    border-color: #ccc;
   }
 
 
@@ -79,6 +88,11 @@
     width: 400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
+  
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
   }
   
   .close-button {
@@ -90,7 +104,6 @@
   }
   
   button {
-    margin: 10px 0;
     padding: 12px 20px;
     background-color: #ffc400;
     border: 1px solid #ffc400;
@@ -103,11 +116,22 @@
     border: 1px solid #c0c0c0;
   }
 
-  .add-employee-button{
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+  .add-employee-button-modal {
+    display: block; 
+    margin-top: 16px; 
+    padding: 12px 20px;
+    background-color: #ffc400;
+    border: 1px solid #ffc400;
+    color: black;
     border-radius: 8px;
-    padding: 16px;
-    width: 250px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-align: center;
+    width: 100%; 
+    max-width: 360px; 
+  }
+
+  .add-new-employee-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
