@@ -1,5 +1,502 @@
 [
-    { "name": "Alice", "department": "HR", "role": "Manager" },
-    { "name": "Bob", "department": "Engineering", "role": "Developer" },
-    { "name": "Charlie", "department": "Sales", "role": "Representative" }
-]
+    {
+      "name": "Caresse",
+      "department": "Human Resources",
+      "role": "Electrician"
+    },
+    {
+      "name": "Fionnula",
+      "department": "Support",
+      "role": "Project Manager"
+    },
+    {
+      "name": "Dorice",
+      "department": "Engineering",
+      "role": "Surveyor"
+    },
+    {
+      "name": "Gamaliel",
+      "department": "Marketing",
+      "role": "Electrician"
+    },
+    {
+      "name": "Rafa",
+      "department": "Research and Development",
+      "role": "Estimator"
+    },
+    {
+      "name": "Rollins",
+      "department": "Services",
+      "role": "Engineer"
+    },
+    {
+      "name": "Osborn",
+      "department": "Sales",
+      "role": "Construction Worker"
+    },
+    {
+      "name": "Darsey",
+      "department": "Services",
+      "role": "Construction Worker"
+    },
+    {
+      "name": "Erskine",
+      "department": "Support",
+      "role": "Construction Expeditor"
+    },
+    {
+      "name": "Tildy",
+      "department": "Engineering",
+      "role": "Supervisor"
+    },
+    {
+      "name": "Arabela",
+      "department": "Legal",
+      "role": "Architect"
+    },
+    {
+      "name": "Ernst",
+      "department": "Business Development",
+      "role": "Estimator"
+    },
+    {
+      "name": "Barb",
+      "department": "Product Management",
+      "role": "Supervisor"
+    },
+    {
+      "name": "Inesita",
+      "department": "Business Development",
+      "role": "Architect"
+    },
+    {
+      "name": "Jarrod",
+      "department": "Human Resources",
+      "role": "Estimator"
+    },
+    {
+      "name": "Luce",
+      "department": "Legal",
+      "role": "Electrician"
+    },
+    {
+      "name": "Adler",
+      "department": "Business Development",
+      "role": "Surveyor"
+    },
+    {
+      "name": "Berte",
+      "department": "Sales",
+      "role": "Construction Worker"
+    },
+    {
+      "name": "Amandy",
+      "department": "Marketing",
+      "role": "Construction Expeditor"
+    },
+    {
+      "name": "Helen-elizabeth",
+      "department": "Legal",
+      "role": "Supervisor"
+    },
+    {
+      "name": "Derril",
+      "department": "Services",
+      "role": "Project Manager"
+    },
+    {
+      "name": "Letizia",
+      "department": "Research and Development",
+      "role": "Architect"
+    },
+    {
+      "name": "Phillie",
+      "department": "Marketing",
+      "role": "Construction Worker"
+    },
+    {
+      "name": "Robin",
+      "department": "Marketing",
+      "role": "Construction Expeditor"
+    },
+    {
+      "name": "Lewiss",
+      "department": "Training",
+      "role": "Electrician"
+    },
+    {
+      "name": "Kirsti",
+      "department": "Product Management",
+      "role": "Construction Manager"
+    },
+    {
+      "name": "Collie",
+      "department": "Sales",
+      "role": "Architect"
+    },
+    {
+      "name": "Gian",
+      "department": "Engineering",
+      "role": "Construction Manager"
+    },
+    {
+      "name": "Cole",
+      "department": "Support",
+      "role": "Construction Manager"
+    },
+    {
+      "name": "Alie",
+      "department": "Engineering",
+      "role": "Estimator"
+    },
+    {
+      "name": "Bonita",
+      "department": "Support",
+      "role": "Project Manager"
+    },
+    {
+      "name": "Westleigh",
+      "department": "Services",
+      "role": "Estimator"
+    },
+    {
+      "name": "Melony",
+      "department": "Research and Development",
+      "role": "Engineer"
+    },
+    {
+      "name": "Law",
+      "department": "Business Development",
+      "role": "Construction Worker"
+    },
+    {
+      "name": "Conney",
+      "department": "Support",
+      "role": "Construction Worker"
+    },
+    {
+      "name": "Ali",
+      "department": "Human Resources",
+      "role": "Construction Foreman"
+    },
+    {
+      "name": "Elmira",
+      "department": "Services",
+      "role": "Supervisor"
+    },
+    {
+      "name": "Mickey",
+      "department": "Business Development",
+      "role": "Estimator"
+    },
+    {
+      "name": "Ianthe",
+      "department": "Research and Development",
+      "role": "Surveyor"
+    },
+    {
+      "name": "Vera",
+      "department": "Human Resources",
+      "role": "Electrician"
+    },
+    {
+      "name": "Kym",
+      "department": "Research and Development",
+      "role": "Engineer"
+    },
+    {
+      "name": "Dennison",
+      "department": "Research and Development",
+      "role": "Estimator"
+    },
+    {
+      "name": "Hatty",
+      "department": "Business Development",
+      "role": "Construction Worker"
+    },
+    {
+      "name": "Carline",
+      "department": "Marketing",
+      "role": "Estimator"
+    },
+    {
+      "name": "Hendrika",
+      "department": "Engineering",
+      "role": "Estimator"
+    },
+    {
+      "name": "Iris",
+      "department": "Human Resources",
+      "role": "Construction Expeditor"
+    },
+    {
+      "name": "Saul",
+      "department": "Research and Development",
+      "role": "Construction Foreman"
+    },
+    {
+      "name": "Hilary",
+      "department": "Engineering",
+      "role": "Estimator"
+    },
+    {
+      "name": "Coraline",
+      "department": "Support",
+      "role": "Estimator"
+    },
+    {
+      "name": "Olympie",
+      "department": "Services",
+      "role": "Subcontractor"
+    },
+    {
+      "name": "Jacquie",
+      "department": "Business Development",
+      "role": "Surveyor"
+    },
+    {
+      "name": "Hollie",
+      "department": "Marketing",
+      "role": "Supervisor"
+    },
+    {
+      "name": "Jordan",
+      "department": "Training",
+      "role": "Construction Worker"
+    },
+    {
+      "name": "Betteann",
+      "department": "Engineering",
+      "role": "Project Manager"
+    },
+    {
+      "name": "Blanche",
+      "department": "Engineering",
+      "role": "Project Manager"
+    },
+    {
+      "name": "Humfrey",
+      "department": "Sales",
+      "role": "Construction Foreman"
+    },
+    {
+      "name": "Doria",
+      "department": "Research and Development",
+      "role": "Project Manager"
+    },
+    {
+      "name": "Kean",
+      "department": "Human Resources",
+      "role": "Surveyor"
+    },
+    {
+      "name": "Kiersten",
+      "department": "Research and Development",
+      "role": "Project Manager"
+    },
+    {
+      "name": "Dionysus",
+      "department": "Human Resources",
+      "role": "Estimator"
+    },
+    {
+      "name": "Baudoin",
+      "department": "Engineering",
+      "role": "Construction Worker"
+    },
+    {
+      "name": "Casar",
+      "department": "Research and Development",
+      "role": "Electrician"
+    },
+    {
+      "name": "Carlie",
+      "department": "Research and Development",
+      "role": "Surveyor"
+    },
+    {
+      "name": "Bradly",
+      "department": "Research and Development",
+      "role": "Engineer"
+    },
+    {
+      "name": "Alexandr",
+      "department": "Training",
+      "role": "Construction Expeditor"
+    },
+    {
+      "name": "Chuck",
+      "department": "Business Development",
+      "role": "Surveyor"
+    },
+    {
+      "name": "Daphene",
+      "department": "Accounting",
+      "role": "Construction Foreman"
+    },
+    {
+      "name": "Wolf",
+      "department": "Research and Development",
+      "role": "Construction Foreman"
+    },
+    {
+      "name": "Dorian",
+      "department": "Business Development",
+      "role": "Construction Foreman"
+    },
+    {
+      "name": "Trescha",
+      "department": "Sales",
+      "role": "Construction Expeditor"
+    },
+    {
+      "name": "Adair",
+      "department": "Business Development",
+      "role": "Engineer"
+    },
+    {
+      "name": "Chev",
+      "department": "Research and Development",
+      "role": "Surveyor"
+    },
+    {
+      "name": "Mada",
+      "department": "Engineering",
+      "role": "Construction Manager"
+    },
+    {
+      "name": "Zarah",
+      "department": "Research and Development",
+      "role": "Architect"
+    },
+    {
+      "name": "Nichole",
+      "department": "Business Development",
+      "role": "Supervisor"
+    },
+    {
+      "name": "Marijo",
+      "department": "Marketing",
+      "role": "Project Manager"
+    },
+    {
+      "name": "Burg",
+      "department": "Human Resources",
+      "role": "Construction Expeditor"
+    },
+    {
+      "name": "Melody",
+      "department": "Accounting",
+      "role": "Construction Expeditor"
+    },
+    {
+      "name": "Elly",
+      "department": "Training",
+      "role": "Construction Expeditor"
+    },
+    {
+      "name": "Woodman",
+      "department": "Engineering",
+      "role": "Surveyor"
+    },
+    {
+      "name": "Sharline",
+      "department": "Legal",
+      "role": "Surveyor"
+    },
+    {
+      "name": "Calida",
+      "department": "Sales",
+      "role": "Supervisor"
+    },
+    {
+      "name": "Illa",
+      "department": "Support",
+      "role": "Electrician"
+    },
+    {
+      "name": "Gwennie",
+      "department": "Accounting",
+      "role": "Supervisor"
+    },
+    {
+      "name": "Danya",
+      "department": "Human Resources",
+      "role": "Construction Foreman"
+    },
+    {
+      "name": "Mitchel",
+      "department": "Training",
+      "role": "Construction Manager"
+    },
+    {
+      "name": "Torey",
+      "department": "Legal",
+      "role": "Construction Worker"
+    },
+    {
+      "name": "Rozina",
+      "department": "Sales",
+      "role": "Subcontractor"
+    },
+    {
+      "name": "Robenia",
+      "department": "Sales",
+      "role": "Construction Manager"
+    },
+    {
+      "name": "Kent",
+      "department": "Human Resources",
+      "role": "Engineer"
+    },
+    {
+      "name": "Helen-elizabeth",
+      "department": "Product Management",
+      "role": "Construction Worker"
+    },
+    {
+      "name": "Kari",
+      "department": "Support",
+      "role": "Construction Foreman"
+    },
+    {
+      "name": "Idelle",
+      "department": "Marketing",
+      "role": "Estimator"
+    },
+    {
+      "name": "Hillier",
+      "department": "Sales",
+      "role": "Supervisor"
+    },
+    {
+      "name": "Anna",
+      "department": "Business Development",
+      "role": "Subcontractor"
+    },
+    {
+      "name": "Bartholomeus",
+      "department": "Training",
+      "role": "Estimator"
+    },
+    {
+      "name": "Tabbie",
+      "department": "Training",
+      "role": "Construction Expeditor"
+    },
+    {
+      "name": "Cesar",
+      "department": "Support",
+      "role": "Estimator"
+    },
+    {
+      "name": "Gloriane",
+      "department": "Legal",
+      "role": "Estimator"
+    },
+    {
+      "name": "Allen",
+      "department": "Accounting",
+      "role": "Supervisor"
+    }
+  ]

@@ -9,4 +9,8 @@
     align-items: center;
     padding: 0 120px;
 }
-
+  
+  .header-logo {
+    width: 200px;
+    height: auto;
+  }

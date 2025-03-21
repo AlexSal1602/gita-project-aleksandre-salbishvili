@@ -8,6 +8,8 @@ const Userlist = () => {
   const [newUser, setNewUser] = useState({ id: '', name: '', department: '', role: '' });
   const [isLoaded, setIsLoaded] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [sortedUsers, setSortedUsers] = useState([]);
+  const [isSorted, setIsSorted] = useState(false);
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -49,9 +51,22 @@ const Userlist = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const updatedUsers = [...users, { ...newUser, id: users.length + 1 }];
-    setUsers(updatedUsers);
-    setOriginalUsers(updatedUsers);
+    const newUserWithId = { ...newUser, id: users.length + 1 };
+    
+
+    if (isSorted) {
+      const updatedSortedUsers = [...users, newUserWithId].sort((a, b) => 
+        a.name.localeCompare(b.name)
+      );
+      setUsers(updatedSortedUsers);
+      
+      setOriginalUsers([...originalUsers, newUserWithId]);
+    } else {
+      const updatedUsers = [...users, newUserWithId];
+      setUsers(updatedUsers);
+      setOriginalUsers(updatedUsers);
+    }
+    
     setNewUser({ id: '', name: '', department: '', role: '' });
     setIsModalOpen(false);
   };
@@ -69,68 +84,85 @@ const Userlist = () => {
     }
   };
 
+
+  const handleSortToggle = () => {
+    if (isSorted) {
+      setUsers(originalUsers);
+    } else {
+      const sorted = [...users].sort((a, b) => a.name.localeCompare(b.name));
+      setUsers(sorted);
+    }
+    setIsSorted(!isSorted);
+  };
+  
   return (
-    <>
-      <h1>Home</h1>
-      <div className="controls">
+    <div id="userlist-body">
+      <h1>Employees</h1>
+      <div id="controls">
+        <button className="sort-button" onClick={handleSortToggle}>
+          Sort by Name
+        </button>
         <form className="search-form" onSubmit={handleSearch}>
           <input type="text" placeholder="Search by name" />
           <button type="submit">Search</button>
         </form>
-        <button className="reset-button" onClick={() => setUsers(originalUsers)}>Reset</button>
+        <button className="reset-button" onClick={() => setUsers(originalUsers)}>Show List</button>
       </div>
       <div id="user-cards-container">
-        {users.map(user => (
-          <div key={user.id} className="user-card">
-            <h3>{user.name}</h3>
-            <p><strong>Department:</strong> {user.department}</p>
-            <p><strong>Role:</strong> {user.role}</p>
-          </div>
-        ))}
         <button className="add-employee-button" onClick={() => setIsModalOpen(true)}>
           <FaCirclePlus fontSize="2em" />
         </button>
+        {users.length > 0 ? (
+          users.map(user => (
+            <div key={user.id} className="user-card">
+              <h3>{user.name}</h3>
+              <p><strong>Department:</strong> {user.department}</p>
+              <p><strong>Role:</strong> {user.role}</p>
+            </div>
+          ))
+        ) : (
+          <div className="no-results-message">No match found</div>
+        )}
       </div>
-      
-
+  
       {isModalOpen && (
         <div className="modal">
           <div className="modal-content">
             <span className="close-button" onClick={() => setIsModalOpen(false)}>&times;</span>
             <form className="add-new-employee-form" onSubmit={handleSubmit}>
-  <input
-    type="text"
-    name="name"
-    placeholder="Name"
-    value={newUser.name}
-    onChange={handleChange}
-    required
-  />
-  <input
-    type="text"
-    name="department"
-    placeholder="Department"
-    value={newUser.department}
-    onChange={handleChange}
-    required
-  />
-  <input
-    type="text"
-    name="role"
-    placeholder="Role"
-    value={newUser.role}
-    onChange={handleChange}
-    required
-  />
-  <button type="submit" className="add-employee-button-modal">
-    Add Employee
-  </button>
-</form>
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                value={newUser.name}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="text"
+                name="department"
+                placeholder="Department"
+                value={newUser.department}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="text"
+                name="role"
+                placeholder="Role"
+                value={newUser.role}
+                onChange={handleChange}
+                required
+              />
+              <button type="submit" className="add-employee-button-modal">
+                Add Employee
+              </button>
+            </form>
           </div>
         </div>
       )}
-    </>
+    </div>
   );
-};
+}
 
 export default Userlist;
